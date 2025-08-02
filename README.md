@@ -1,2 +1,212 @@
-# testing-web
-just testing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AOKAO - Web3 Infrastructure Provider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #0a0a0a;
+      color: #f8f8f8;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #0070f3 0%, #7928ca 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glow-box {
+      box-shadow: 0 0 30px rgba(0, 112, 243, 0.2);
+    }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(0, 112, 243, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0);
+      }
+    }
+  </style>
+</head>
+<body class="flex flex-col">
+  <header class="absolute w-full py-6 px-4 sm:px-12 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold gradient-text">AOKAO</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 flex flex-col justify-center pt-32 pb-20 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-blue-500 filter blur-3xl animate-pulse"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-purple-500 filter blur-3xl animate-pulse"></div>
+    </div>
+
+    <div class="container mx-auto max-w-5xl relative z-10">
+      <div class="text-center mb-4 fade-in">
+        <div class="inline-block px-4 py-2 rounded-full bg-gray-800 text-blue-400 text-sm font-medium mb-8">
+          A Trusted Web3 Infrastructure Provider
+        </div>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center leading-tight mb-8 animate__animated animate__fadeIn">
+        Secure Blockchain<br>
+        <span class="gradient-text">Validator Services</span>
+        <br>Coming Soon
+      </h1>
+
+      <div class="text-center max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-12 animate__animated animate__fadeIn animate__delay-1s">
+        AOKAO delivers secure and reliable proof-of-stake validator services with transparency and uptime at our core.
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16 animate__animated animate__fadeIn animate__delay-1s">
+        <a href="mailto:iam@aokao.net" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-medium transition-colors duration-300 text-center pulse">
+          Contact Us
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 animate__animated animate__fadeIn animate__delay-1-5s">
+        <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+          <div class="flex items-center mb-4">
+            <div class="flex-shrink-0 text-blue-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-3">Enterprise Security</h3>
+          </div>
+          <p class="text-gray-400">Military-grade security protocols to protect your validator nodes and ensure integrity of proof-of-stake networks.</p>
+        </div>
+
+        <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+          <div class="flex items-center mb-4">
+            <div class="flex-shrink-0 text-purple-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold ml-3">99.9% Uptime</h3>
+          </div>
+          <p class="text-gray-400">Geographically distributed, redundant infrastructure with automated failover to maximize validator rewards.</p>
+        </div>
+      </div>
+
+      <!-- Startup Vision Section -->
+      <section class="relative z-10 max-w-5xl mx-auto my-24 px-6 md:px-0">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Startup Vision</h2>
+          <p class="text-gray-400 text-lg">The purpose and future of AOKAO in the Web3 ecosystem.</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+            <h3 class="text-xl font-semibold mb-3 text-blue-400">What is AOKAO?</h3>
+            <p class="text-gray-300">
+              AOKAO is building reliable and secure validator infrastructure for proof-of-stake networks.
+              We focus on high availability, transparency, and community-driven support to help Web3 ecosystems thrive.
+            </p>
+          </div>
+
+          <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+            <h3 class="text-xl font-semibold mb-3 text-purple-400">Who is it for?</h3>
+            <p class="text-gray-300">
+              Blockchain foundations, DAOs, and institutions that require enterprise-grade validator support.
+              AOKAO helps early-stage protocols and mature networks stay online and secure.
+            </p>
+          </div>
+
+          <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+            <h3 class="text-xl font-semibold mb-3 text-green-400">Why AOKAO?</h3>
+            <p class="text-gray-300">
+              99.9% uptime, distributed systems, strong security, and automation-first principles — all backed by a team that values integrity and decentralization.
+            </p>
+          </div>
+
+          <div class="bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl p-8 glow-box">
+            <h3 class="text-xl font-semibold mb-3 text-yellow-400">Future Plans</h3>
+            <p class="text-gray-300">
+              AOKAO will offer premium analytics dashboards, custom validator services for new chains, and delegated staking interfaces for institutions and DAOs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="relative rounded-3xl overflow-hidden bg-gray-900 bg-opacity-40 backdrop-blur-lg animate__animated animate__fadeIn animate__delay-2s">
+        <div class="p-8 md:p-10">
+          <div class="flex flex-col md:flex-row md:items-center gap-8">
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold mb-3">Stay Updated</h3>
+              <p class="text-gray-400 mb-6">Join our waitlist to get notified when we launch and receive early access to our validator services.</p>
+              <form class="flex gap-2">
+                <input type="email" placeholder="Enter your email" class="flex-1 bg-gray-800 border border-gray-700 rounded-full py-3 px-6 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full transition-colors duration-300">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="hidden md:block flex-shrink-0">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/326da6e3-829f-4521-9be6-40417c86a51e.png" alt="Blockchain nodes illustration" class="w-48 h-48 rounded-2xl object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-8 px-4 bg-gray-900 bg-opacity-50">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div class="mb-4 sm:mb-0">
+        <span class="text-xl font-bold gradient-text">AOKAO</span>
+      </div>
+      <div class="text-gray-400 text-sm">
+        © 2023 AOKAO. All rights reserved. <span class="hidden sm:inline">|</span> 
+        <br class="sm:hidden">
+        <a href="mailto:iam@aokao.net" class="hover:text-white transition-colors">iam@aokao.net</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const elementsToAnimate = document.querySelectorAll('.animate__animated');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(entry.target.dataset.animation);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elementsToAnimate.forEach(element => {
+        observer.observe(element);
+      });
+
+      document.querySelectorAll('.glow-box').forEach(box => {
+        box.addEventListener('mouseenter', () => {
+          box.style.boxShadow = '0 0 40px rgba(0, 112, 243, 0.3)';
+        });
+        box.addEventListener('mouseleave', () => {
+          box.style.boxShadow = '0 0 30px rgba(0, 112, 243, 0.2)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
